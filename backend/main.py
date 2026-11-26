@@ -23,9 +23,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --------------------------------------------------
-# REQUEST MODEL
-# --------------------------------------------------
+
+# REQUEST MODEL------------------------
 
 class InventoryItemCreate(BaseModel):
     product_name: str
@@ -38,9 +37,7 @@ class InventoryItemCreate(BaseModel):
     date_confirmed: int = 0
 
 
-# --------------------------------------------------
-# API ENDPOINTS
-# --------------------------------------------------
+# API ENDPOINTS------------------------
 
 @app.get("/")
 def home():
