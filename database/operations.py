@@ -1,9 +1,8 @@
 from database.database import get_connection
 
 
-# --------------------------------------------------
-# INVENTORY OPERATIONS
-# --------------------------------------------------
+
+# INVENTORY OPERATIONS------------------------
 
 def add_inventory_item(
     product_name,
@@ -159,9 +158,8 @@ def delete_inventory_item(item_id):
         return True
 
 
-# --------------------------------------------------
-# SCAN CANDIDATE OPERATIONS
-# --------------------------------------------------
+# SCAN CANDIDATE OPERATIONS------------------------
+
 
 def create_scan_candidate(
     raw_ocr_text,
